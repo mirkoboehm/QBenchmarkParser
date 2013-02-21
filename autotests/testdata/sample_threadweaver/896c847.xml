@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCase name="QueueBenchmarksTest">
+<Environment>
+    <QtVersion>5.1.0</QtVersion>
+    <QTestVersion>5.1.0</QTestVersion>
+</Environment>
+<TestFunction name="initTestCase">
+<Incident type="pass" file="" line="0" />
+</TestFunction>
+<TestFunction name="IndividualJobsBenchmark">
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1 values" value="4.93994e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 1 values" value="4.91822e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 1 values" value="1.34314e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 1 values" value="9.72102e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 1 values" value="7.77978e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 1 values" value="2.67277e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 1 values" value="2.19128e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 1 values" value="5.45882e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10 values" value="4.31024e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 10 values" value="5.32551e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 10 values" value="5.2592e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 10 values" value="5.63969e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 10 values" value="5.31655e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 10 values" value="5.66343e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 10 values" value="5.72456e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 10 values" value="5.57754e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100 values" value="4.18851e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 100 values" value="5.46648e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 100 values" value="5.59362e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 100 values" value="9.50459e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 100 values" value="7.2159e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 100 values" value="5.67156e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 100 values" value="5.68089e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 100 values" value="5.72004e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1000 values" value="5.30467e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 1000 values" value="4.40087e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 1000 values" value="1.19752e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 1000 values" value="1.43804e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 1000 values" value="1.4529e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 1000 values" value="5.70449e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 1000 values" value="5.73629e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 1000 values" value="5.62848e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10000 values" value="1.92218e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 10000 values" value="9.10516e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 10000 values" value="9.20484e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 10000 values" value="1.26853e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 10000 values" value="6.24426e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 10000 values" value="5.88509e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 10000 values" value="5.9721e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 10000 values" value="6.76902e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100000 values" value="1.40041e+10" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 100000 values" value="7.22998e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 100000 values" value="4.91683e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 100000 values" value="5.14401e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 100000 values" value="6.67301e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 100000 values" value="7.00292e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 100000 values" value="7.04767e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 100000 values" value="7.59912e+09" iterations="1" />
+</TestFunction>
+<TestFunction name="BaselineAsJobsBenchmark">
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1 values" value="1.23682e+07" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10 values" value="1.32363e+07" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100 values" value="2.95488e+07" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1000 values" value="1.40622e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10000 values" value="1.29735e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100000 values" value="1.31328e+10" iterations="1" />
+</TestFunction>
+<TestFunction name="cleanupTestCase">
+<Incident type="pass" file="" line="0" />
+</TestFunction>
+</TestCase>

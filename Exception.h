@@ -5,6 +5,9 @@
 
 #include <QString>
 
+class QXmlStreamReader;
+
+//FIXME Add label() virtual method ("Input error", "Format error", ...)
 class Exception : public std::runtime_error {
 public:
     explicit Exception(const QString& message);
@@ -22,6 +25,17 @@ public:
 
 private:
     QString usageMessage(const QString& message) const;
+};
+
+class InputException : public Exception {
+public:
+    explicit InputException(const QString& message) : Exception(message) {}
+};
+
+class InputFormatException : public Exception {
+public:
+    explicit InputFormatException(const QString& message) : Exception(message) {}
+    InputFormatException(const QString& message, QXmlStreamReader* reader);
 };
 
 #endif // EXCEPTION_H

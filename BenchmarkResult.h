@@ -3,12 +3,10 @@
 
 #include <QString>
 
-class BenchmarkResult
+struct BenchmarkResult
 {
-public:
     BenchmarkResult();
 
-private:
     //data about the benchmark:
     QString testFunction_;
     QString tag_;
@@ -17,7 +15,9 @@ private:
     QString label_;
     QString revision_;
     //the benchmark result:
+    QString metric_;
     QString value_;
+    bool passed_;
 };
 
 #endif // BENCHMARKRESULT_H

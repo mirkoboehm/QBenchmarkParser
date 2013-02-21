@@ -1,9 +1,3 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2013-02-20T00:22:34
-#
-#-------------------------------------------------
-
 QT       += core
 
 QT       -= gui
@@ -24,13 +18,17 @@ SOURCES += \
     BenchmarkResult.cpp
 
 HEADERS += \
-    LightXmlParser.h
+    QTestlibXmlParser.h
 
 SOURCES += \
-    LightXmlParser.cpp
+    QTestlibXmlParser.cpp
 
 HEADERS += \
     Exception.h
 
 SOURCES += \
     Exception.cpp
+
+OTHER_FILES += \
+    autotests/testdata/sample_threadweaver/QBenchmarkParser.ini \
+    autotests/testdata/sample_threadweaver/896c847.xml

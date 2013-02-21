@@ -7,13 +7,13 @@
 #include <QFile>
 #include <QList>
 
-#include <LightXmlParser.h>
+#include <QTestlibXmlParser.h>
 #include <BenchmarkResult.h>
 #include <Exception.h>
 
 int main(int argc, char *argv[])
 {
-    const QString LightXmlFormatString("lightxml");
+    const QString QTestlibXmlFormatString("xml");
     const QString IniFileName("QBenchmarkParser.ini");
     using namespace std;
 
@@ -25,26 +25,32 @@ int main(int argc, char *argv[])
         //load application init file from current directory:
         const QString filename(QDir::currentPath() + QDir::separator() + IniFileName);
         if (QFile(filename).exists()) {
-            wcout << "Loading settings from " << filename.toStdWString() << "..." << endl;
+            wcout << QObject::tr("Loading settings from %1.").arg(filename).toStdWString() << endl;
         } else {
-            wcout << "Settings file " << filename.toStdWString() << " not found." << endl;
+            wcout << QObject::tr("Settings file %1 not found!").arg(filename).toStdWString() << endl;
         }
         if (argc <=1) {
-            throw UsageException("No filenames given.");
+            throw UsageException(QObject::tr("No filenames specified."));
         }
         const QStringList filenames = a.arguments().mid(1);
         QSettings settings(filename, QSettings::IniFormat);
         //generate parser, parse input XML files:
         //at the moment, only lightxml format is supported:
         QList<BenchmarkResult> results;
-        if (settings.value("Input/Format", LightXmlFormatString).value<QString>() == LightXmlFormatString) {
-            LightXmlParser parser;
+        //FIXME format could actually be autodetected per file, as long as it is XML
+        const QString inputFileFormat(settings.value("Input/Format", QTestlibXmlFormatString).value<QString>());
+        if (inputFileFormat==QTestlibXmlFormatString) {
+            QTestlibXmlParser parser;
             parser.parse(settings, filenames);
             results = parser.results();
         } else {
-            //throw...
+            throw InputException(QObject::tr("Input file format %1 not supported.").arg(inputFileFormat));
         }
         //generate formatte, write output file:
+        Q_FOREACH(const BenchmarkResult& result, results)  {
+            qDebug() << result.testFunction_ << result.passed_ << result.tag_ << result.metric_
+                     << result.value_;
+        }
     } catch(Exception& e) {
         wcout << e.message().toStdWString() << endl;
         return 1;

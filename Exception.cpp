@@ -1,4 +1,5 @@
 #include <QtCore/QObject>
+#include <QXmlStreamReader>
 
 #include "Exception.h"
 
@@ -30,4 +31,10 @@ QString UsageException::usageMessage(const QString &message) const
              "Parses the input files, aggregates the contained benchmark data, and\n"
              "stores results in the specified output file.");
     return QObject::tr("%1\n\n%2").arg(message).arg(usage).trimmed();
+}
+
+
+InputFormatException::InputFormatException(const QString &message, QXmlStreamReader *reader)
+    : Exception(QObject::tr("%1:%2: %3").arg(reader->lineNumber()).arg(reader->columnNumber()).arg(message))
+{
 }
