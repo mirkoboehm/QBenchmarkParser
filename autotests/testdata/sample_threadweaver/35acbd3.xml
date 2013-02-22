@@ -1,0 +1,2183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCase name="QueueBenchmarksTest">
+<Environment>
+    <QtVersion>5.1.0</QtVersion>
+    <QTestVersion>5.1.0</QTestVersion>
+</Environment>
+<TestFunction name="initTestCase">
+<Incident type="pass" file="" line="0" />
+</TestFunction>
+<TestFunction name="BaselineBenchmark">
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1 values" value="873000" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10 values" value="2.88553e+06" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100 values" value="1.90287e+07" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1000 values" value="1.24624e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10000 values" value="1.26729e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100000 values" value="1.30674e+10" iterations="1" />
+</TestFunction>
+<TestFunction name="BaselineAsJobsBenchmark">
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1 values" value="1.18069e+07" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10 values" value="1.31326e+07" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100 values" value="2.93129e+07" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1000 values" value="1.4072e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10000 values" value="1.30478e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100000 values" value="1.3076e+10" iterations="1" />
+</TestFunction>
+<TestFunction name="IndividualJobsBenchmark">
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1 values" value="4.38832e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 1 values" value="5.37486e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 1 values" value="1.06117e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 1 values" value="1.33908e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 1 values" value="8.7344e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 1 values" value="5.57311e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 1 values" value="2.17962e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 1 values" value="3.21088e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10 values" value="4.20605e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 10 values" value="5.70524e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 10 values" value="5.52574e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 10 values" value="1.25256e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 10 values" value="5.63704e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 10 values" value="5.61624e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 10 values" value="5.68317e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 10 values" value="5.64274e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100 values" value="4.23983e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 100 values" value="5.36373e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 100 values" value="5.63503e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 100 values" value="5.59534e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 100 values" value="5.68458e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 100 values" value="5.6359e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 100 values" value="5.79137e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 100 values" value="5.67495e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1000 values" value="5.38687e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 1000 values" value="5.1116e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 1000 values" value="5.49316e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 1000 values" value="5.59789e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 1000 values" value="5.7594e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 1000 values" value="5.69711e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 1000 values" value="5.82677e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 1000 values" value="5.77703e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10000 values" value="1.7575e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 10000 values" value="9.11027e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 10000 values" value="6.68359e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 10000 values" value="6.09774e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 10000 values" value="6.0535e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 10000 values" value="5.74522e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 10000 values" value="5.87377e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 10000 values" value="6.63885e+08" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100000 values" value="1.39612e+10" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 100000 values" value="7.19195e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 100000 values" value="3.7309e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 100000 values" value="4.37572e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 100000 values" value="6.32954e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 100000 values" value="6.85409e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 100000 values" value="7.29909e+09" iterations="1" />
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 100000 values" value="7.36601e+09" iterations="1" />
+</TestFunction>
+<TestFunction name="CollectionsBenchmark">
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1 values" value="4.59009e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 1 values" value="5.83875e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 1 values" value="6.3241e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 1 values" value="1.47194e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 1 values" value="6.80641e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 1 values" value="6.76391e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 1 values" value="6.83249e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 1 values" value="6.75836e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10 values" value="4.6686e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 10 values" value="8.79195e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 10 values" value="6.2047e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 10 values" value="1.58388e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 10 values" value="6.84158e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 10 values" value="6.6895e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 10 values" value="6.78848e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 10 values" value="6.79871e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100 values" value="4.55212e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 100 values" value="5.71513e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 100 values" value="6.38516e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 100 values" value="1.6216e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 100 values" value="6.77729e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 100 values" value="6.69948e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 100 values" value="6.75641e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 100 values" value="6.7338e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1000 values" value="5.72534e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 1000 values" value="5.99368e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 1000 values" value="6.31757e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 1000 values" value="1.66574e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 1000 values" value="6.89048e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 1000 values" value="6.88942e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 1000 values" value="6.87592e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 1000 values" value="6.85101e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10000 values" value="1.78319e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 10000 values" value="1.03746e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 10000 values" value="9.26611e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 10000 values" value="1.78969e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 10000 values" value="7.30716e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 10000 values" value="6.93997e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 10000 values" value="6.94766e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 10000 values" value="7.75991e+08" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100000 values" value="1.41723e+10" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 100000 values" value="7.28335e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 100000 values" value="4.10005e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 100000 values" value="4.5924e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 100000 values" value="6.52302e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 100000 values" value="7.18699e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 100000 values" value="7.58622e+09" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 100000 values" value="7.68758e+09" iterations="1" />
+</TestFunction>
+<TestFunction name="SequencesBenchmark">
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1 values" value="1.2299e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 1 values" value="2.91376e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 1 values" value="3.06626e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 1 values" value="3.03373e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 1 values" value="2.97969e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 1 values" value="3.02248e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 1 values" value="3.01876e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 1 values" value="3.02636e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10 values" value="1.27561e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 10 values" value="2.67943e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 10 values" value="2.89506e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 10 values" value="3.02915e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 10 values" value="3.05123e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 10 values" value="2.85834e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 10 values" value="2.98663e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 10 values" value="3.03586e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100 values" value="1.16759e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 100 values" value="2.88809e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 100 values" value="2.97012e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 100 values" value="2.99966e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 100 values" value="3.04138e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 100 values" value="3.03017e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 100 values" value="3.03571e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 100 values" value="2.90884e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 1000 values" value="1.18377e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 1000 values" value="2.75964e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 1000 values" value="3.03375e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 1000 values" value="3.00396e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 1000 values" value="3.02174e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 1000 values" value="2.9375e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 1000 values" value="3.01968e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 1000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 1000 values" value="3.04534e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 10000 values" value="1.28528e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 10000 values" value="3.10892e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 10000 values" value="3.08568e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 10000 values" value="2.94578e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 10000 values" value="3.07888e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 10000 values" value="2.96811e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 10000 values" value="3.07861e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 10000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 10000 values" value="2.94902e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[1 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="1 threads, 100000 values" value="1.55459e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[2 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="2 threads, 100000 values" value="3.51533e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[4 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="4 threads, 100000 values" value="3.45266e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[8 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="8 threads, 100000 values" value="3.64257e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[16 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="16 threads, 100000 values" value="3.31643e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[32 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="32 threads, 100000 values" value="3.42086e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[64 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="64 threads, 100000 values" value="3.46947e+11" iterations="1" />
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, queueing... ]]></Description>
+</Message>
+<Message type="qdebug" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+    <Description><![CDATA[256 blocks 256 operations, executing... ]]></Description>
+</Message>
+<Incident type="pass" file="" line="0">
+    <DataTag><![CDATA[128 threads, 100000 values]]></DataTag>
+</Incident>
+<BenchmarkResult metric="CPUTicks" tag="128 threads, 100000 values" value="3.42156e+11" iterations="1" />
+</TestFunction>
+<TestFunction name="cleanupTestCase">
+<Incident type="pass" file="" line="0" />
+</TestFunction>
+</TestCase>

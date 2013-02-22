@@ -23,6 +23,7 @@ const char* TestCaseElement = "TestCase";
 const char* EnvironmentElement = "Environment";
 const char* TestFunctionElement = "TestFunction";
 const char* TestFunctionNameAttribute = "name";
+const char* MessageElement = "Message";
 const char* IncidentElement = "Incident";
 const char* IncidentTypeAttribute = "type";
 const char* DataTagElement = "DataTag";
@@ -85,6 +86,8 @@ void QTestlibXmlParser::readTestFunction(QXmlStreamReader *reader, const Benchma
             readIncident(reader, result);
         } else if (reader->name() == BenchmarkResultElement) {
             readBenchmarkResult(reader, result);
+        } else if (reader->name() == MessageElement) {
+            reader->skipCurrentElement();
         } else {
             throw InputFormatException(tr("Unexpected element %1").arg(reader->name().toString()), reader);
         }
