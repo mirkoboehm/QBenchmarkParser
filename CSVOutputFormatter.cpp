@@ -40,7 +40,7 @@ void CSVOutputFormatter::write(const QList<BenchmarkResult> &results)
     for (int row = 0; row < rows; ++ row) {
         for (int column = 0; column < columns; ++column) {
             if (row==0 && column==0) {
-                stream << separator;
+                stream << tr("Configurations") << separator;
             } else if (row==0) {
                 const QString value = labels[column-1];
                 stream << value << separator;
