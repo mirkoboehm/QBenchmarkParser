@@ -51,8 +51,6 @@ void QTestlibXmlParser::readTestCase(QXmlStreamReader *reader)
     readNextStartElementExpecting(TestCaseElement, reader);
     readEnvironment(reader);
     while (reader->readNextStartElement()) {
-        qDebug().nospace() << reader->lineNumber() << ":" << reader->columnNumber()
-                           << ": " << reader->tokenType() << " " << reader->name();
         if (reader->name() == TestFunctionElement) {
             readTestFunction(reader);
         } else {

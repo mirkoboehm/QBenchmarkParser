@@ -6,6 +6,7 @@
 #include <QtDebug>
 #include <QFile>
 #include <QList>
+#include <QRegExp>
 
 #include <QTestlibXmlParser.h>
 #include <BenchmarkResult.h>
@@ -47,8 +48,22 @@ int main(int argc, char *argv[])
             throw InputException(QObject::tr("Input file format %1 not supported.").arg(inputFileFormat));
         }
         //generate formatte, write output file:
+        const QString seriesRXsetting = settings.value("Input/SeriesRX").toString();
+        QRegExp seriesRX(seriesRXsetting);
+        const QString configurationRXsetting = settings.value("Input/ConfigurationRX").toString();
+        QRegExp configurationRX(configurationRXsetting);
+        for(QList<BenchmarkResult>::iterator it = results.begin(); it != results.end(); ++it) {
+            //group results based on SeriesRX and ConfigurationRX specified in settings:
+            BenchmarkResult& result = *it;
+            if (seriesRX.indexIn(result.tag_) != -1) {
+                result.series_ = seriesRX.cap(1);
+            }
+            if (configurationRX.indexIn(result.tag_) != -1) {
+                result.configuration_ = configurationRX.cap(1);
+            }
+        }
         Q_FOREACH(const BenchmarkResult& result, results)  {
-            qDebug() << result.testFunction_ << result.passed_ << result.tag_ << result.metric_
+            qDebug() << result.testFunction_ << result.series_ << result.configuration_ << result.passed_ << result.tag_ << result.metric_
                      << result.value_;
         }
     } catch(Exception& e) {
