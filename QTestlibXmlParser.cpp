@@ -42,7 +42,7 @@ void QTestlibXmlParser::parse(const QSettings&, const QStringList& filenames)
         QFile file(filename);
         if (!file.exists()) throw InputException(tr("File not found: %1").arg(filename));
         if (!file.open(QIODevice::ReadOnly)) throw InputException(tr("Unable to open file: %1").arg(filename));
-        std::wcout << tr("Parsing input file %1.").arg(filename).toStdWString() << std::endl;
+        std::wcerr << tr("Parsing input file %1.").arg(filename).toStdWString() << std::endl;
         QXmlStreamReader reader(&file);
         BenchmarkResult result;
         QFileInfo fileInfo(file);

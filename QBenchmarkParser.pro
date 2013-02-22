@@ -3,9 +3,9 @@ QT       += core
 QT       -= gui
 
 TARGET = QBenchmarkParser
+QMAKE_CXXFLAGS += -std=c++0x
 CONFIG   += console
 CONFIG   -= app_bundle
-
 TEMPLATE = app
 
 
@@ -33,3 +33,9 @@ OTHER_FILES += \
     autotests/testdata/sample_threadweaver/QBenchmarkParser.ini \
     autotests/testdata/sample_threadweaver/896c847.xml \
     autotests/testdata/sample_threadweaver/35acbd3.xml
+
+HEADERS += \
+    CSVOutputFormatter.h
+
+SOURCES += \
+    CSVOutputFormatter.cpp

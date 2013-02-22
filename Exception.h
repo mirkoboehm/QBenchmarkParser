@@ -38,4 +38,9 @@ public:
     InputFormatException(const QString& message, QXmlStreamReader* reader);
 };
 
+class OutputException : public Exception {
+public:
+    explicit OutputException(const QString& message) : Exception(message) {}
+};
+
 #endif // EXCEPTION_H
