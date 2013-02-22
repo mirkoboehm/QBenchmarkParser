@@ -13,7 +13,7 @@ struct BenchmarkResult
     QString iterations_;
     //generated attributes:
     QString label_;
-    QString revision_;
+    QString filename_;
     QString series_;
     QString configuration_;
     //the benchmark result:

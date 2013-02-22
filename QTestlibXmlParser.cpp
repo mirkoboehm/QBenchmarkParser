@@ -3,6 +3,7 @@
 #include <QtDebug>
 #include <QFile>
 #include <QXmlStreamReader>
+#include <QFileInfo>
 
 #include "QTestlibXmlParser.h"
 #include "Exception.h"
@@ -34,7 +35,7 @@ const char* QtVersionElement = "QtVersion";
 const char* QTestVersionElement = "QTestVersion";
 }
 
-void QTestlibXmlParser::parse(const QSettings &settings, const QStringList& filenames)
+void QTestlibXmlParser::parse(const QSettings&, const QStringList& filenames)
 {
     Q_FOREACH(const QString& filename, filenames) {
         QFile file(filename);
@@ -42,24 +43,27 @@ void QTestlibXmlParser::parse(const QSettings &settings, const QStringList& file
         if (!file.open(QIODevice::ReadOnly)) throw InputException(tr("Unable to open file: %1").arg(filename));
         std::wcout << tr("Parsing input file %1.").arg(filename).toStdWString() << std::endl;
         QXmlStreamReader reader(&file);
-        readTestCase(&reader);
+        BenchmarkResult result;
+        QFileInfo fileInfo(file);
+        result.filename_ = fileInfo.baseName();
+        readTestCase(&reader, result);
     }
 }
 
-void QTestlibXmlParser::readTestCase(QXmlStreamReader *reader)
+void QTestlibXmlParser::readTestCase(QXmlStreamReader *reader, const BenchmarkResult &resultSoFar)
 {
     readNextStartElementExpecting(TestCaseElement, reader);
-    readEnvironment(reader);
+    readEnvironment(reader, resultSoFar);
     while (reader->readNextStartElement()) {
         if (reader->name() == TestFunctionElement) {
-            readTestFunction(reader);
+            readTestFunction(reader, resultSoFar);
         } else {
             throw InputFormatException(tr("Unexpected element %1").arg(reader->name().toString()), reader);
         }
     }
 }
 
-void QTestlibXmlParser::readEnvironment(QXmlStreamReader *reader)
+void QTestlibXmlParser::readEnvironment(QXmlStreamReader *reader, const BenchmarkResult&)
 {
     readNextStartElementExpecting(EnvironmentElement, reader);
     readNextStartElementExpecting(QtVersionElement, reader);
@@ -72,9 +76,9 @@ void QTestlibXmlParser::readEnvironment(QXmlStreamReader *reader)
     }
 }
 
-void QTestlibXmlParser::readTestFunction(QXmlStreamReader *reader)
+void QTestlibXmlParser::readTestFunction(QXmlStreamReader *reader, const BenchmarkResult &resultSoFar)
 {
-    BenchmarkResult result;
+    BenchmarkResult result(resultSoFar);
     result.testFunction_ = reader->attributes().value(TestFunctionNameAttribute).toString();
     while (reader->readNextStartElement()) {
         if (reader->name() == IncidentElement) {

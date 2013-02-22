@@ -19,9 +19,9 @@ public:
     void parse(const QSettings& settings, const QStringList &filenames);
 
 private:
-    void readTestCase(QXmlStreamReader* reader);
-    void readEnvironment(QXmlStreamReader* reader);
-    void readTestFunction(QXmlStreamReader* reader);
+    void readTestCase(QXmlStreamReader* reader, const BenchmarkResult& resultSoFar);
+    void readEnvironment(QXmlStreamReader* reader, const BenchmarkResult &resultSoFar);
+    void readTestFunction(QXmlStreamReader* reader, const BenchmarkResult &resultSoFar);
     void readIncident(QXmlStreamReader* reader, BenchmarkResult &resultSoFar);
     void readBenchmarkResult(QXmlStreamReader* reader, const BenchmarkResult& resultSoFar);
 

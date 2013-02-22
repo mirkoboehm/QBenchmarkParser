@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
         } else {
             throw InputException(QObject::tr("Input file format %1 not supported.").arg(inputFileFormat));
         }
-        //generate formatte, write output file:
+        //extend generated data, using SeriesRX and ConfigurationRX settings, and calculate labels
         const QString seriesRxSetting = settings.value("Input/SeriesRX").toString();
         QRegExp seriesRX(seriesRxSetting);
         const QString configurationRxSetting = settings.value("Input/ConfigurationRX").toString();
@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
                 result.label_.replace("testfunction", result.testFunction_);
                 result.label_.replace("tag", result.tag_);
                 result.label_.replace("iterations", result.iterations_);
-                result.label_.replace("revision", result.revision_);
+                result.label_.replace("filename", result.filename_);
                 result.label_.replace("series", result.series_);
                 result.label_.replace("configuration", result.configuration_);
                 result.label_.replace("metric", result.metric_);
@@ -87,6 +87,8 @@ int main(int argc, char *argv[])
             qDebug() << result.label_ << result.testFunction_ << result.series_ << result.configuration_ << result.passed_ << result.tag_ << result.metric_
                      << result.value_;
         }
+        //create formatter, write output:
+        //...FIXME
     } catch(Exception& e) {
         wcout << e.message().toStdWString() << endl;
         return 1;
