@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 #include <QCoreApplication>
 #include <QDir>
@@ -11,6 +12,10 @@
 #include <QTestlibXmlParser.h>
 #include <BenchmarkResult.h>
 #include <Exception.h>
+
+bool compareLabel(const BenchmarkResult& left, const BenchmarkResult& right) {
+    return left.label_ < right.label_;
+}
 
 int main(int argc, char *argv[])
 {
@@ -48,12 +53,13 @@ int main(int argc, char *argv[])
             throw InputException(QObject::tr("Input file format %1 not supported.").arg(inputFileFormat));
         }
         //generate formatte, write output file:
-        const QString seriesRXsetting = settings.value("Input/SeriesRX").toString();
-        QRegExp seriesRX(seriesRXsetting);
-        const QString configurationRXsetting = settings.value("Input/ConfigurationRX").toString();
-        QRegExp configurationRX(configurationRXsetting);
+        const QString seriesRxSetting = settings.value("Input/SeriesRX").toString();
+        QRegExp seriesRX(seriesRxSetting);
+        const QString configurationRxSetting = settings.value("Input/ConfigurationRX").toString();
+        QRegExp configurationRX(configurationRxSetting);
+        const QString groupBySetting = settings.value("Output/GroupBy").toString();
         for(QList<BenchmarkResult>::iterator it = results.begin(); it != results.end(); ++it) {
-            //group results based on SeriesRX and ConfigurationRX specified in settings:
+            //extend results based on SeriesRX and ConfigurationRX specified in settings:
             BenchmarkResult& result = *it;
             if (seriesRX.indexIn(result.tag_) != -1) {
                 result.series_ = seriesRX.cap(1);
@@ -61,9 +67,24 @@ int main(int argc, char *argv[])
             if (configurationRX.indexIn(result.tag_) != -1) {
                 result.configuration_ = configurationRX.cap(1);
             }
+            //group results by setting label to the string specified in groupBySetting:
+            if (!groupBySetting.isEmpty()) {
+                result.label_ = groupBySetting;
+                result.label_.replace("testfunction", result.testFunction_);
+                result.label_.replace("tag", result.tag_);
+                result.label_.replace("iterations", result.iterations_);
+                result.label_.replace("revision", result.revision_);
+                result.label_.replace("series", result.series_);
+                result.label_.replace("configuration", result.configuration_);
+                result.label_.replace("metric", result.metric_);
+                result.label_.replace("value", result.value_);
+                result.label_.replace("passed", result.passed_ ? "true" : "false");
+            }
         }
+        //sort results by label:
+        std::stable_sort(results.begin(), results.end(), compareLabel);
         Q_FOREACH(const BenchmarkResult& result, results)  {
-            qDebug() << result.testFunction_ << result.series_ << result.configuration_ << result.passed_ << result.tag_ << result.metric_
+            qDebug() << result.label_ << result.testFunction_ << result.series_ << result.configuration_ << result.passed_ << result.tag_ << result.metric_
                      << result.value_;
         }
     } catch(Exception& e) {
