@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/sample_threadweaver">
+        <file>896c847.xml</file>
+        <file>QBenchmarkParser.ini</file>
+    </qresource>
+</RCC>

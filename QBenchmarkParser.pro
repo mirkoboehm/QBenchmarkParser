@@ -39,3 +39,6 @@ HEADERS += \
 
 SOURCES += \
     CSVOutputFormatter.cpp
+
+RESOURCES += \
+    autotests/testdata/sample_threadweaver/sample_threadweaver.qrc
