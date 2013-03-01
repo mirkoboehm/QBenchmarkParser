@@ -8,7 +8,7 @@
 #include <Exception.h>
 #include "CSVOutputFormatter.h"
 
-CSVOutputFormatter::CSVOutputFormatter(QSettings *settings, QObject *parent)
+CSVOutputFormatter::CSVOutputFormatter(QSharedPointer<QSettings> settings, QObject *parent)
     : QObject(parent)
     , settings_(settings)
 {

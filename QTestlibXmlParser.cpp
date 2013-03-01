@@ -36,7 +36,7 @@ const char* QtVersionElement = "QtVersion";
 const char* QTestVersionElement = "QTestVersion";
 }
 
-void QTestlibXmlParser::parse(const QSettings&, const QStringList& filenames)
+void QTestlibXmlParser::parse(QSharedPointer<QSettings>, const QStringList& filenames)
 {
     Q_FOREACH(const QString& filename, filenames) {
         QFile file(filename);

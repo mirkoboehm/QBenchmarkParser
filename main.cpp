@@ -10,6 +10,7 @@
 #include <QRegExp>
 
 #include <QTestlibXmlParser.h>
+#include <CommandLineParser.h>
 #include <BenchmarkResult.h>
 #include <Exception.h>
 #include <CSVOutputFormatter.h>
@@ -17,7 +18,6 @@
 int main(int argc, char *argv[])
 {
     const QString QTestlibXmlFormatString("xml");
-    const QString IniFileName("QBenchmarkParser.ini");
     const QString CSVOutputFormatString("CSV");
     using namespace std;
 
@@ -26,23 +26,14 @@ int main(int argc, char *argv[])
                                               "(C) 2013 Mirko Boehm <mirko@kde.org>. Licensed under the GPLv3."));
     wcerr << copyrightNotice.toStdWString() << endl;
     try {
-        //load application init file from current directory:
-        const QString filename(QDir::currentPath() + QDir::separator() + IniFileName);
-        if (QFile(filename).exists()) {
-            wcerr << QObject::tr("Loading settings from %1.").arg(filename).toStdWString() << endl;
-        } else {
-            wcerr << QObject::tr("Settings file %1 not found!").arg(filename).toStdWString() << endl;
-        }
-        if (argc <=1) {
-            throw UsageException(QObject::tr("No filenames specified."));
-        }
-        const QStringList filenames = a.arguments().mid(1);
-        QSettings settings(filename, QSettings::IniFormat);
+        QStringList arguments = a.arguments().mid(1);
+        QSharedPointer<QSettings> settings(CommandLineParser::settings(arguments));
+        const QStringList filenames = arguments;
         //generate parser, parse input XML files:
         //at the moment, only lightxml format is supported:
         QList<BenchmarkResult> results;
         //FIXME format could actually be autodetected per file, as long as it is XML
-        const QString inputFileFormat(settings.value("Input/Format", QTestlibXmlFormatString).value<QString>());
+        const QString inputFileFormat(settings->value("Input/Format", QTestlibXmlFormatString).value<QString>());
         if (inputFileFormat==QTestlibXmlFormatString) {
             QTestlibXmlParser parser;
             parser.parse(settings, filenames);
@@ -51,11 +42,11 @@ int main(int argc, char *argv[])
             throw InputException(QObject::tr("Input file format %1 not supported.").arg(inputFileFormat));
         }
         //extend generated data, using SeriesRX and ConfigurationRX settings, and calculate labels
-        const QString seriesRxSetting = settings.value("Input/SeriesRX").toString();
+        const QString seriesRxSetting = settings->value("Input/SeriesRX").toString();
         QRegExp seriesRX(seriesRxSetting);
-        const QString configurationRxSetting = settings.value("Input/ConfigurationRX").toString();
+        const QString configurationRxSetting = settings->value("Input/ConfigurationRX").toString();
         QRegExp configurationRX(configurationRxSetting);
-        const QString groupBySetting = settings.value("Output/GroupBy").toString();
+        const QString groupBySetting = settings->value("Output/GroupBy").toString();
         for(QList<BenchmarkResult>::iterator it = results.begin(); it != results.end(); ++it) {
             //extend results based on SeriesRX and ConfigurationRX specified in settings:
             BenchmarkResult& result = *it;
@@ -82,9 +73,9 @@ int main(int argc, char *argv[])
         std::stable_sort(results.begin(), results.end(),
                          [](const BenchmarkResult& l, const BenchmarkResult& r) -> bool { return l.label_ < r.label_; });
         //create formatter, write output:
-        const QString outFileFormat(settings.value("Output/Format", QTestlibXmlFormatString).value<QString>());
+        const QString outFileFormat(settings->value("Output/Format", QTestlibXmlFormatString).value<QString>());
         if (outFileFormat==CSVOutputFormatString) {
-            CSVOutputFormatter formatter(&settings);
+            CSVOutputFormatter formatter(settings);
             formatter.write(results);
         } else {
             throw InputException(QObject::tr("Output file format %1 not supported.").arg(outFileFormat));

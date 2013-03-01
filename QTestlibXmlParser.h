@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QSettings>
 #include <QStringList>
+#include <QSharedPointer>
 
 #include <BenchmarkResult.h>
 
@@ -16,7 +17,7 @@ public:
     explicit QTestlibXmlParser(QObject *parent = 0);
     QList<BenchmarkResult> results() const;
 
-    void parse(const QSettings& settings, const QStringList &filenames);
+    void parse(QSharedPointer<QSettings> settings, const QStringList &filenames);
 
 private:
     void readTestCase(QXmlStreamReader* reader, const BenchmarkResult& resultSoFar);
