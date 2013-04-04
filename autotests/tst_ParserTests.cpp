@@ -65,7 +65,8 @@ QStringList ParserTests::sampleThreadWeaverArguments()
     return QStringList() << configOption << inputFile;
 }
 
-QList<BenchmarkResult> ParserTests::filterResults(const QList<BenchmarkResult> &results, const QString &function, const QString &tag)
+QList<BenchmarkResult> ParserTests::filterResults(const QList<BenchmarkResult> &results,
+                                                  const QString &function, const QString &tag)
 {
     QList<BenchmarkResult> filtered;
     Q_FOREACH(const BenchmarkResult& result, results) {
