@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
         QSharedPointer<QSettings> settings(CommandLineParser::settings(arguments));
         const QStringList filenames = arguments;
         //generate parser, parse input XML files:
-        //at the moment, only lightxml format is supported:
+        //at the moment, only the lightxml format is supported:
         QList<BenchmarkResult> results;
         //FIXME format could actually be autodetected per file, as long as it is XML
         const QString inputFileFormat(settings->value("Input/Format", QTestlibXmlFormatString).value<QString>());
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
         const QString configurationRxSetting = settings->value("Input/ConfigurationRX").toString();
         QRegExp configurationRX(configurationRxSetting);
         const QString groupBySetting = settings->value("Output/GroupBy").toString();
-        for(QList<BenchmarkResult>::iterator it = results.begin(); it != results.end(); ++it) {
+        for(auto it = results.begin(); it != results.end(); ++it) {
             //extend results based on SeriesRX and ConfigurationRX specified in settings:
             BenchmarkResult& result = *it;
             if (seriesRX.indexIn(result.tag_) != -1) {

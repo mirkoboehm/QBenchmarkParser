@@ -15,13 +15,23 @@ Exception::~Exception() throw()
 
 QString Exception::message() const
 {
-    return m_message;
+    return QObject::tr("%1: %2").arg(label()).arg(m_message);
+}
+
+QString Exception::label() const
+{
+    return QObject::tr("Error");
 }
 
 
 UsageException::UsageException(const QString &message)
     : Exception(usageMessage(message))
 {
+}
+
+QString UsageException::label() const
+{
+    return QObject::tr("Usage error");
 }
 
 QString UsageException::usageMessage(const QString &message) const
@@ -37,4 +47,21 @@ QString UsageException::usageMessage(const QString &message) const
 InputFormatException::InputFormatException(const QString &message, QXmlStreamReader *reader)
     : Exception(QObject::tr("%1:%2: %3").arg(reader->lineNumber()).arg(reader->columnNumber()).arg(message))
 {
+}
+
+
+QString InputException::label() const
+{
+    return QObject::tr("Input error");
+}
+
+QString InputFormatException::label() const
+{
+    return QObject::tr("Input format error");
+}
+
+
+QString OutputException::label() const
+{
+    return QObject::tr("Output error");
 }
