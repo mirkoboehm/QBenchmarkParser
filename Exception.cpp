@@ -37,9 +37,9 @@ QString UsageException::label() const
 QString UsageException::usageMessage(const QString &message) const
 {
     const QString usage = QObject::tr
-            ("Usage: QBenchmarkParser -c config file name -o output file name <benchmark result files>\n"
+            ("Usage: QBenchmarkParser --configuration=<config file name> <benchmark result files>\n"
              "Parses the input files, aggregates the contained benchmark data, and\n"
-             "stores results in the specified output file.");
+             "prints the results to standard output.");
     return QObject::tr("%1\n\n%2").arg(message).arg(usage).trimmed();
 }
 
