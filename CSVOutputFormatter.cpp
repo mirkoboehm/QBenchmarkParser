@@ -38,22 +38,28 @@ void CSVOutputFormatter::write(const QList<BenchmarkResult> &results)
     }
     QTextStream stream(&output);
     const bool labelsInRows = settings_->value("Output/LabelsInRows", false).value<bool>();
+    auto const separatorUnlessLastColumn = [&stream, &separator] (int column, int columns) {
+        if (column + 1 < columns) stream << separator;
+    };
     if (labelsInRows) {
         const int columns = configurations.count() + 1;
         const int rows = labels.count() + 1;
         for (int row = 0; row < rows; ++ row) {
             for (int column = 0; column < columns; ++column) {
                 if (row==0 && column==0) {
-                    stream << tr("Configurations") << separator;
+                    stream << tr("Configurations");
+                    separatorUnlessLastColumn(column, columns);
                 } else if (row==0) {
                     const QString value = configurations[column-1];
-                    stream << value << separator;
+                    stream << value;
+                    separatorUnlessLastColumn(column, columns);
                 } else if (column==0) {
                     const QString value = labels[row-1];
-                    stream << value << separator;
+                    stream << value;
+                    separatorUnlessLastColumn(column, columns);
                 } else {
-                    const QString v = value(results, labels[row-1], configurations[column-1]);
-                    stream << v << separator;
+                    stream << value(results, labels[row-1], configurations[column-1]);
+                    separatorUnlessLastColumn(column, columns);
                 }
             }
             stream << endl;
@@ -64,15 +70,19 @@ void CSVOutputFormatter::write(const QList<BenchmarkResult> &results)
         for (int row = 0; row < rows; ++ row) {
             for (int column = 0; column < columns; ++column) {
                 if (row==0 && column==0) {
-                    stream << tr("Configurations") << separator;
+                    stream << tr("Configurations");
+                    separatorUnlessLastColumn(column, columns);
                 } else if (row==0) {
                     const QString value = labels[column-1];
-                    stream << value << separator;
+                    stream << value;
+                    separatorUnlessLastColumn(column, columns);
                 } else if (column==0) {
                     const QString value = configurations[row-1];
-                    stream << value << separator;
+                    stream << value;
+                    separatorUnlessLastColumn(column, columns);
                 } else {
-                    stream << value(results, labels[column-1], configurations[row-1]) << separator;
+                    stream << value(results, labels[column-1], configurations[row-1]);
+                    separatorUnlessLastColumn(column, columns);
                 }
             }
             stream << endl;
