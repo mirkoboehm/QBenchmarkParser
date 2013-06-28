@@ -16,18 +16,20 @@ CSVOutputFormatter::CSVOutputFormatter(QSharedPointer<QSettings> settings, QObje
 
 void CSVOutputFormatter::write(const QList<BenchmarkResult> &results)
 {
+    using namespace std;
+
     //collect all existing configuration values for grouping
     QVector<QString> configurations;
-    std::transform(results.begin(), results.end(), std::back_inserter(configurations),
-                   [](const BenchmarkResult& b) -> const QString& { return b.configuration_; });
-    std::sort(configurations.begin(), configurations.end());
-    configurations.erase(std::unique(configurations.begin(), configurations.end()), configurations.end());
+    transform(results.begin(), results.end(), back_inserter(configurations),
+              [](const BenchmarkResult& b) { return b.configuration_; });
+    sort(configurations.begin(), configurations.end());
+    configurations.erase(unique(configurations.begin(), configurations.end()), configurations.end());
     //collect all existing data series
     QVector<QString> labels;
-    std::transform(results.begin(), results.end(), std::back_inserter(labels),
-                   [](const BenchmarkResult& b) -> const QString& { return b.label_; });
-    std::sort(labels.begin(), labels.end());
-    labels.erase(std::unique(labels.begin(), labels.end()), labels.end());
+    transform(results.begin(), results.end(), back_inserter(labels),
+              [](const BenchmarkResult& b) { return b.label_; });
+    sort(labels.begin(), labels.end());
+    labels.erase(unique(labels.begin(), labels.end()), labels.end());
     //write output
     const QString separator = settings_->value("Output/Separator", QLatin1String(";")).value<QString>();
     QFile output;
@@ -35,23 +37,46 @@ void CSVOutputFormatter::write(const QList<BenchmarkResult> &results)
         throw OutputException(tr("Unable to open standard output for writing."));
     }
     QTextStream stream(&output);
-    const int columns = labels.count() + 1;
-    const int rows = configurations.count() + 1;
-    for (int row = 0; row < rows; ++ row) {
-        for (int column = 0; column < columns; ++column) {
-            if (row==0 && column==0) {
-                stream << tr("Configurations") << separator;
-            } else if (row==0) {
-                const QString value = labels[column-1];
-                stream << value << separator;
-            } else if (column==0) {
-                const QString value = configurations[row-1];
-                stream << value << separator;
-            } else {
-                stream << value(results, labels[column-1], configurations[row-1]) << separator;
+    const bool labelsInRows = settings_->value("Output/LabelsInRows", false).value<bool>();
+    if (labelsInRows) {
+        const int columns = configurations.count() + 1;
+        const int rows = labels.count() + 1;
+        for (int row = 0; row < rows; ++ row) {
+            for (int column = 0; column < columns; ++column) {
+                if (row==0 && column==0) {
+                    stream << tr("Configurations") << separator;
+                } else if (row==0) {
+                    const QString value = configurations[column-1];
+                    stream << value << separator;
+                } else if (column==0) {
+                    const QString value = labels[row-1];
+                    stream << value << separator;
+                } else {
+                    const QString v = value(results, labels[row-1], configurations[column-1]);
+                    stream << v << separator;
+                }
             }
+            stream << endl;
         }
-        stream << endl;
+    } else { // labels in columns, configurations in rows
+        const int columns = labels.count() + 1;
+        const int rows = configurations.count() + 1;
+        for (int row = 0; row < rows; ++ row) {
+            for (int column = 0; column < columns; ++column) {
+                if (row==0 && column==0) {
+                    stream << tr("Configurations") << separator;
+                } else if (row==0) {
+                    const QString value = labels[column-1];
+                    stream << value << separator;
+                } else if (column==0) {
+                    const QString value = configurations[row-1];
+                    stream << value << separator;
+                } else {
+                    stream << value(results, labels[column-1], configurations[row-1]) << separator;
+                }
+            }
+            stream << endl;
+        }
     }
 }
 
